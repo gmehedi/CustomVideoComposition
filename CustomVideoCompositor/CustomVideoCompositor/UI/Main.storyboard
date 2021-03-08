@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="uWd-RN-0Tq">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="mIZ-iz-2nB">
+            <objects>
+                <viewController id="uWd-RN-0Tq" customClass="ViewController" customModule="CustomVideoCompositor" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tWd-yV-Vqr"/>
+                        <viewControllerLayoutGuide type="bottom" id="11B-3f-SuV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="P55-tA-muP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1AH-aI-5ls">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="1AH-aI-5ls" secondAttribute="height" multiplier="1:1" id="MZu-8D-TjF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1AH-aI-5ls" firstAttribute="leading" secondItem="P55-tA-muP" secondAttribute="leading" id="bJb-zh-PXJ"/>
+                            <constraint firstItem="1AH-aI-5ls" firstAttribute="top" secondItem="tWd-yV-Vqr" secondAttribute="bottom" id="i1U-hE-Mp0"/>
+                            <constraint firstAttribute="trailing" secondItem="1AH-aI-5ls" secondAttribute="trailing" id="wRW-u6-n6E"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="topView" destination="1AH-aI-5ls" id="rDA-Mj-q2C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ok9-Yx-9tt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="629.60000000000002" y="71.514242878560722"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
